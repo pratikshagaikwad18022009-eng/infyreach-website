@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Capabilities | Infyreach Solutions Pvt. Ltd.</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left, rgba(30,100,255,.15), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,180,255,.08), transparent 35%),
+    #07162f;
+
+    color:white;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    background:rgba(0,0,0,.6);
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:gold;
+    text-decoration:underline;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1e90ff;
+}
+
+
+/* ================= CAPABILITIES ================= */
+
+.capabilities{
+    padding:150px 6% 90px;
+    min-height:100vh;
+}
+
+.capabilities-container{
+    max-width:1250px;
+    margin:auto;
+}
+
+
+/* ================= TITLE ================= */
+
+.capabilities-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.small-title{
+    color:gold;
+    font-size:14px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.capabilities-heading h1{
+    font-size:50px;
+    margin-bottom:18px;
+
+    background:
+    linear-gradient(
+        90deg,
+        white,
+        gold,
+        white
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.capabilities-heading p{
+    color:#cbd5e1;
+    font-size:17px;
+    line-height:28px;
+
+    max-width:800px;
+    margin:auto;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.13),
+        rgba(255,255,255,.035)
+    );
+
+    border:1px solid rgba(255,255,255,.16);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    padding-bottom:25px;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.30),
+    inset 0 1px 0 rgba(255,255,255,.12);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(255,215,0,.55);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.45),
+    0 0 25px rgba(30,144,255,.18);
+}
+
+
+/* ================= IMAGE ================= */
+
+.card-image{
+
+    width:100%;
+    height:190px;
+
+    overflow:hidden;
+}
+
+.card-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+
+    mask-image:
+    linear-gradient(
+        to bottom,
+        black 68%,
+        transparent 100%
+    );
+
+    -webkit-mask-image:
+    linear-gradient(
+        to bottom,
+        black 68%,
+        transparent 100%
+    );
+}
+
+.card:hover .card-image img{
+    transform:scale(1.08);
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.card-content{
+
+    padding:5px 22px 0;
+
+    margin-top:-8px;
+
+    position:relative;
+}
+
+.card-content h2{
+
+    color:gold;
+
+    font-size:21px;
+
+    margin-bottom:12px;
+}
+
+.card-content p{
+
+    color:#d6deea;
+
+    font-size:14px;
+
+    line-height:24px;
+
+    min-height:72px;
+
+    margin-bottom:20px;
+}
+
+
+/* ================= READ MORE ================= */
+
+.read-more{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border:1px solid gold;
+
+    border-radius:25px;
+
+    color:gold;
+
+    background:rgba(255,215,0,.05);
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.read-more:hover{
+
+    background:gold;
+
+    color:#07162f;
+
+    box-shadow:
+    0 0 18px rgba(255,215,0,.35);
+}
+
+
+/* ================= BOTTOM ================= */
+
+.capability-bottom{
+
+    margin-top:65px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+}
+
+.capability-bottom h2{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+.capability-bottom h2 span{
+    color:gold;
+}
+
+.capability-bottom p{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+    line-height:25px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#020b18;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h3{
+
+    color:gold;
+
+    margin-bottom:10px;
+}
+
+footer p{
+
+    color:#aaa;
+
+    font-size:14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1100px){
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    .navbar{
+        width:90%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .logo{
+        font-size:30px;
+    }
+
+    .capabilities{
+        padding-top:120px;
+    }
+
+    .capabilities-heading h1{
+        font-size:38px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+Infy<span>reach</span>
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="capabilities.html">
+Capabilities
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= CAPABILITIES ================= -->
+
+<section class="capabilities">
+
+<div class="capabilities-container">
+
+
+<!-- TITLE -->
+
+<div class="capabilities-heading">
+
+<div class="small-title">
+Infyreach Solutions
+</div>
+
+<h1>
+Our Capabilities
+</h1>
+
+<p>
+We combine creativity, technology and strategic thinking to
+deliver innovative digital solutions and powerful brand experiences.
+</p>
+
+</div>
+
+
+<!-- ================= CARDS ================= -->
+
+<div class="cards">
+
+
+<!-- AD FILMS -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/adfilms 1.jpg"
+alt="Ad Films">
+
+</div>
+
+<div class="card-content">
+
+<h2>Ad Films</h2>
+
+<p>
+We create cinematic stories and memorable visual experiences
+that connect brands with their audiences.
+</p>
+
+<a href="adfilms.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- TVCs -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/tvcs.jpg"
+alt="TVCs">
+
+</div>
+
+<div class="card-content">
+
+<h2>TVCs</h2>
+
+<p>
+Creative television commercials designed with strong
+storytelling and powerful brand communication.
+</p>
+
+<a href="tvcs.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- VIRTUAL PRODUCTION -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/vp.jpg"
+alt="Virtual Production">
+
+</div>
+
+<div class="card-content">
+
+<h2>Virtual Production</h2>
+
+<p>
+Modern virtual production solutions that combine
+real-world filming with digital environments.
+</p>
+
+<a href="virtual-production.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- VFX -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/vfx.jpg"
+alt="Visual Effects">
+
+</div>
+
+<div class="card-content">
+
+<h2>Visual Effects</h2>
+
+<p>
+Advanced visual effects that transform creative ideas
+into engaging cinematic experiences.
+</p>
+
+<a href="vfx.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- VR -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/vr 1.jpg"
+alt="Virtual Reality">
+
+</div>
+
+<div class="card-content">
+
+<h2>Virtual Reality</h2>
+
+<p>
+Immersive VR experiences that allow audiences to explore
+interactive digital environments.
+</p>
+
+<a href="vr.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- AR -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/ar.jpg"
+alt="Augmented Reality">
+
+</div>
+
+<div class="card-content">
+
+<h2>Augmented Reality</h2>
+
+<p>
+Interactive AR experiences that blend digital content
+with the real world.
+</p>
+
+<a href="ar.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- SOCIAL MEDIA -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/smm.jpg"
+alt="Social Media Marketing">
+
+</div>
+
+<div class="card-content">
+
+<h2>Social Media Marketing</h2>
+
+<p>
+Creative social media strategies that increase brand
+awareness, engagement and digital presence.
+</p>
+
+<a href="smm.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- SEO -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="images/seo.jpg"
+alt="SEO">
+
+</div>
+
+<div class="card-content">
+
+<h2>SEO & Digital Marketing</h2>
+
+<p>
+Strategic SEO solutions designed to improve online
+visibility and support long-term digital growth.
+</p>
+
+<a href="seo.html" class="read-more">
+READ MORE →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= BOTTOM ================= -->
+
+<div class="capability-bottom">
+
+<h2>
+Where <span>Creativity</span> Meets Technology
+</h2>
+
+<p>
+From creative production to digital marketing, we turn
+ideas into meaningful and impactful experiences.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+Infyreach Digital Marketing Company
+</h3>
+
+<p>
+© Infyreach Solutions Pvt. Ltd. All Rights Reserved.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>

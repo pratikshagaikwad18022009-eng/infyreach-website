@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Infyreach</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#07162f;
+    color:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(8px);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:gold;
+    font-size:17px;
+    transition:.3s;
+    text-decoration:underline;
+}
+
+.nav-links a:hover{
+    color:#1e90ff;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+    padding:120px 8% 80px;
+}
+
+.contact-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.contact-title h1{
+    color:gold;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.contact-title p{
+    color:#ddd;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.contact-info{
+    flex:1;
+    min-width:300px;
+}
+
+.info-box{
+    background:#0d2344;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.info-box h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.contact-form{
+    flex:1;
+    min-width:320px;
+    background:#0d2344;
+    padding:25px;
+    border-radius:10px;
+}
+
+.contact-form h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+.contact-form button{
+    background:gold;
+    color:#07162f;
+    border:none;
+    padding:12px 30px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.contact-form button:hover{
+    background:white;
+}
+
+.contact-form button:disabled{
+    opacity:0.6;
+    cursor:not-allowed;
+}
+
+/* ================= MAP ================= */
+
+.map{
+    margin-top:60px;
+}
+
+.map h2{
+    text-align:center;
+    color:gold;
+    margin-bottom:20px;
+}
+
+.map iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:10px;
+}
+
+/* ================= SOCIAL ================= */
+
+.social{
+    text-align:center;
+    margin-top:60px;
+}
+
+.social h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.social a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+.social a:hover{
+    color:gold;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    background:#02101f;
+    padding:25px;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:14px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+Infy<span>reach</span>
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="capabilities.html">Capabilities</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-page">
+
+<div class="contact-title">
+
+<h1>Contact Us</h1>
+
+<p>Let's discuss your next project.</p>
+
+</div>
+
+
+<div class="contact-container">
+
+
+<!-- ================= CONTACT INFORMATION ================= -->
+
+<div class="contact-info">
+
+<div class="info-box">
+
+<h3>📍 Office Address</h3>
+
+<p>
+Infyreach Solutions Pvt. Ltd.<br>
+kharadi, Maharashtra, India
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>📞 Phone</h3>
+
+<p>
++91 9322877913
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>📧 Email</h3>
+
+<p>
+business@infyreach.in
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>🕒 Working Hours</h3>
+
+<p>
+Monday - Friday<br>
+9:30 AM - 6:30 PM
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ================= CONTACT FORM ================= -->
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Full Name"
+required
+>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Email Address"
+required
+>
+
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="Phone Number"
+>
+
+<input
+type="text"
+id="subject"
+name="subject"
+placeholder="Subject"
+>
+
+<textarea
+id="message"
+name="message"
+placeholder="Write Your Message"
+required
+></textarea>
+
+<button type="submit" id="sendButton">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- ================= MAP ================= -->
+
+<div class="map">
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.765146180904!2d73.94539508113776!3d18.5567832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c1479e6abd%3A0x3d3672047e8413fe!2sGera%27s%20Imperium%20Alpha!5e0!3m2!1sen!2sin!4v1785231812120!5m2!1sen!2sin"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+</div>
+
+
+<!-- ================= SOCIAL ================= -->
+
+<div class="social">
+
+<h2>Follow Us</h2>
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">YouTube</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+Infyreach Digital Marketing Company
+</h3>
+
+<p>
+© Infyreach Solutions Pvt. Ltd. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- ================================================= -->
+<!-- SUPABASE CONNECTION -->
+<!-- ================================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+/* YOUR SUPABASE DETAILS */
+
+const SUPABASE_URL =
+"https://dtavrxxiyvavkhvusbdb.supabase.co";
+
+const SUPABASE_KEY =
+"sb_publishable_ZzZ9DCoH2W56_phG60W49g_HGxKOvkg";
+
+
+/* CREATE SUPABASE CLIENT */
+
+const supabaseClient = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+
+
+/* CONTACT FORM */
+
+const form = document.getElementById("contactForm");
+
+const sendButton = document.getElementById("sendButton");
+
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+
+    /* GET FORM VALUES */
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const subject =
+        document.getElementById("subject").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    /* CHECK REQUIRED FIELDS */
+
+    if(name === "" || email === "" || message === ""){
+
+        alert("Please fill Name, Email and Message.");
+
+        return;
+    }
+
+
+    /* DISABLE BUTTON */
+
+    sendButton.disabled = true;
+
+    sendButton.innerText = "Sending...";
+
+
+    /* SEND DATA TO SUPABASE */
+
+    const { data, error } = await supabaseClient
+
+        .from("contacts")
+
+        .insert([
+
+            {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message
+            }
+
+        ]);
+
+
+    /* ERROR */
+
+    if(error){
+
+        console.error("Supabase Error:", error);
+
+        alert(
+            "Message send nahi hua ❌\n\n" +
+            error.message
+        );
+
+        sendButton.disabled = false;
+
+        sendButton.innerText = "Send Message";
+
+        return;
+    }
+
+
+    /* SUCCESS */
+
+    alert("Message successfully sent! ✅");
+
+    form.reset();
+
+    sendButton.disabled = false;
+
+    sendButton.innerText = "Send Message";
+
+});
+
+</script>
+
+
+</body>
+
+</html>

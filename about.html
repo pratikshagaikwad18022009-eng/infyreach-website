@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Infyreach Solutions</title>
+
+
+<style>
+
+/* ================= GENERAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#020d1c;
+    color:white;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    background:rgba(0,0,0,.6);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+}
+
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:gold;
+    text-decoration:underline;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1e90ff;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section{
+
+    min-height:100vh;
+
+    padding:130px 6% 60px;
+
+    background:
+
+    radial-gradient(
+        circle at 80% 50%,
+        rgba(0,130,255,0.18),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #020b18,
+        #061a35,
+        #020d1c
+    );
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.about-container{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    gap:45px;
+
+    align-items:center;
+}
+
+
+/* ================= LEFT CONTENT ================= */
+
+.about-content{
+    padding:10px;
+}
+
+.small-title{
+
+    color:#1e90ff;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+}
+
+.small-title::after{
+
+    content:"";
+
+    display:inline-block;
+
+    width:50px;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    margin-left:12px;
+
+    vertical-align:middle;
+}
+
+
+/* ================= TITLE ================= */
+
+.about-content h1{
+
+    font-size:58px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    color:white;
+}
+
+
+/* GOLD LINE */
+
+.gold-line{
+
+    width:80px;
+
+    height:4px;
+
+    background:gold;
+
+    margin-bottom:30px;
+}
+
+
+/* ================= PARAGRAPHS ================= */
+
+.about-content p{
+
+    color:#d6deea;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.work-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:14px 25px;
+
+    border:2px solid #159cff;
+
+    border-radius:10px;
+
+    color:#38bdf8;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.work-btn:hover{
+
+    background:#159cff;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(21,156,255,.5);
+}
+
+
+/* ================= RIGHT SIDE ================= */
+
+.about-right{
+    width:100%;
+}
+
+
+/* ================= ABOUT IMAGE ================= */
+
+.about-image{
+
+    width:100%;
+
+    height:510px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:1px solid #159cff;
+
+    box-shadow:
+        0 0 20px rgba(0,153,255,.25),
+        0 0 50px rgba(0,153,255,.08);
+}
+
+
+/* ================= CAPABILITIES ================= */
+
+.features{
+
+    margin-top:25px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    border:1px solid rgba(56,189,248,.35);
+
+    border-radius:18px;
+
+    background:rgba(4,21,42,.85);
+
+    overflow:hidden;
+}
+
+
+/* ================= CAPABILITY CARD ================= */
+
+.feature{
+
+    min-height:190px;
+
+    padding:22px 12px;
+
+    text-align:center;
+
+    border-right:1px solid rgba(56,189,248,.3);
+
+    text-decoration:none;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+
+/* Last card */
+
+.feature:last-child{
+    border-right:none;
+}
+
+
+/* Hover */
+
+.feature:hover{
+
+    background:rgba(30,144,255,.15);
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        inset 0 0 25px rgba(56,189,248,.12);
+}
+
+
+/* ================= ICON ================= */
+
+.feature-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:36px;
+
+    margin-bottom:12px;
+
+    border-radius:50%;
+
+    background:rgba(30,144,255,.12);
+
+    transition:.3s;
+}
+
+.feature:hover .feature-icon{
+
+    transform:scale(1.1);
+
+    background:rgba(30,144,255,.25);
+}
+
+
+/* ================= CAPABILITY TITLE ================= */
+
+.feature h3{
+
+    color:gold;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+}
+
+.feature:hover h3{
+
+    color:#38bdf8;
+}
+
+
+/* ================= CAPABILITY TEXT ================= */
+
+.feature p{
+
+    color:#d5deea;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    margin:0;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    text-align:center;
+
+    background:#010914;
+
+    border-top:1px solid rgba(56,189,248,.2);
+
+    padding:28px 20px;
+}
+
+footer h3{
+
+    color:gold;
+
+    font-size:20px;
+
+    margin-bottom:10px;
+}
+
+footer p{
+
+    color:#aaa;
+
+    font-size:14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1000px){
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-content h1{
+
+        font-size:48px;
+    }
+
+    .about-image{
+
+        height:450px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    .navbar{
+
+        width:90%;
+    }
+
+    .nav-links{
+
+        display:none;
+    }
+
+    .logo{
+
+        font-size:30px;
+    }
+
+    .about-section{
+
+        padding:110px 5% 40px;
+    }
+
+    .about-content h1{
+
+        font-size:42px;
+    }
+
+    .about-content p{
+
+        font-size:15px;
+
+        line-height:1.7;
+    }
+
+    .about-image{
+
+        height:300px;
+    }
+
+
+    /* 2 CARDS PER ROW */
+
+    .features{
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    .feature{
+
+        border-bottom:1px solid rgba(56,189,248,.3);
+
+        min-height:180px;
+    }
+
+    .feature:nth-child(2){
+
+        border-right:none;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:450px){
+
+    .about-content h1{
+
+        font-size:36px;
+    }
+
+    .about-image{
+
+        height:250px;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .features{
+
+        grid-template-columns:1fr;
+    }
+
+    .feature{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(56,189,248,.3);
+    }
+
+    .feature:last-child{
+
+        border-bottom:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <div class="logo">
+            Infy<span>reach</span>
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="about.html" class="active">
+                    About
+                </a>
+            </li>
+
+
+            <li>
+                <a href="capabilities.html">
+                    Capabilities
+                </a>
+            </li>
+
+
+            <li>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about-section">
+
+
+    <div class="about-container">
+
+
+        <!-- ================= LEFT CONTENT ================= -->
+
+        <div class="about-content">
+
+
+            <div class="small-title">
+                WHO WE ARE
+            </div>
+
+
+            <h1>
+                About Us
+            </h1>
+
+
+            <div class="gold-line"></div>
+
+
+            <p>
+                We, Infyreach Solutions Pvt. Ltd., are a techno-driven
+                creative solutions provider. We bring creativity and
+                technology together to deliver exceptional results that
+                leave a mark. Whether you want to tell a compelling story,
+                captivate an audience, or create immersive digital
+                experiences, we’re here to turn your ideas into reality.
+            </p>
+
+
+            <p>
+                Our team is driven by passion and backed by expertise.
+                From crafting cinematic ad films to designing
+                cutting-edge VR and AR experiences, we tailor every
+                service to meet your needs. We believe in understanding
+                your vision and transforming it into something
+                extraordinary. For us, it’s not just about creating
+                content—it’s about making an impact.
+            </p>
+
+
+            <p>
+                We take pride in offering a wide range of services under
+                one roof. Need a TVC that grabs attention? A virtual
+                production setup to streamline your shoot? Or
+                jaw-dropping VFX that elevate your story? We’ve got you
+                covered. Each project is a collaboration, ensuring the
+                final result reflects your brand’s identity perfectly.
+            </p>
+
+
+            <a href="contact.html" class="work-btn">
+                Let's Work Together →
+            </a>
+
+
+        </div>
+
+
+
+        <!-- ================= RIGHT CONTENT ================= -->
+ <div class="about-right">
+
+            <img
+                src="images/about1.jpg"
+                alt="Infyreach Creative Team"
+                class="about-image"
+            >
+
+
+            <!-- ================= 4 CAPABILITIES ================= -->
+
+            <div class="features">
+
+
+                <!-- AD FILMS -->
+
+                <a href="capabilities.html" class="feature">
+
+                    <div class="feature-icon">
+                        🎥
+                    </div>
+
+                    <h3>
+                        Ad Films
+                    </h3>
+
+                    <p>
+                        Stories that connect
+                        with your audience.
+                    </p>
+
+                </a>
+
+
+
+                <!-- TVCs -->
+
+                <a href="capabilities.html" class="feature">
+
+                    <div class="feature-icon">
+                        📺
+                    </div>
+
+                    <h3>
+                        TVCs
+                    </h3>
+
+                    <p>
+                        Television commercials
+                        that make an impact.
+                    </p>
+
+                </a>
+
+
+
+                <!-- VIRTUAL PRODUCTION -->
+
+                <a href="capabilities.html" class="feature">
+
+                    <div class="feature-icon">
+                        🎬
+                    </div>
+
+                    <h3>
+                        Virtual Production
+                    </h3>
+
+                    <p>
+                        Next-generation
+                        creative production.
+                    </p>
+
+                </a>
+
+
+
+                <!-- VFX -->
+
+                <a href="capabilities.html" class="feature">
+
+                    <div class="feature-icon">
+                        👁️
+                    </div>
+
+                    <h3>
+                        Visual Effects (VFX)
+                    </h3>
+
+                    <p>
+                        Powerful visuals that
+                        bring stories to life.
+                    </p>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+<p>
+<h3>Infyreach Digital Marketing Company</h3>
+
+© Infyreach Solutions Pvt. Ltd. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
