@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Infyreach</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#07162f;
+    color:#fff;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(8px);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:gold;
+    font-size:17px;
+    text-decoration:underline;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#1e90ff;
+}
+
+/* Gallery */
+
+.gallery-page{
+    min-height:100vh;
+    padding:120px 8% 80px;
+}
+
+.gallery-title{
+    text-align:center;
+    font-size:40px;
+    color:gold;
+    margin-bottom:40px;
+}
+
+.video-gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.video-box{
+    background:#0d2345;
+    padding:15px;
+    border-radius:12px;
+    border:2px solid gold;
+    text-align:center;
+}
+
+/* YouTube Videos */
+
+.video-box iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:10px;
+    background:#000;
+    display:block;
+}
+
+.video-box h3{
+    margin-top:12px;
+    color:gold;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    background:#02101f;
+    padding:25px;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:14px;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .video-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .video-box iframe{
+        height:220px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+Infy<span>reach</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="capabilities.html">Capabilities</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<section class="gallery-page">
+
+<h2 class="gallery-title">Our Video Gallery</h2>
+
+<div class="video-gallery">
+
+
+<!-- Video 1 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NLpdxHavYDo?si=GxT3x6GI3ZXAtGhR" 
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Adfilms</h3>
+
+</div>
+
+
+<!-- Video 2 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z22No-CNzGA?si=8I7ijg7RxgLiyLcI"
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Tvcs</h3>
+
+</div>
+
+
+<!-- Video 3 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yh1rnlej4bo?si=fTPhZbnrnlB7JRY7" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Virtual Production</h3>
+
+</div>
+
+
+<!-- Video 4 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4YoGy_UAn8o?si=qs8v4XRSOnhrv-0k" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>VFX</h3>
+
+</div>
+
+
+<!-- Video 5 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZZyBG6UsvoQ?si=SlQihtv181_bn7KI" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Virtual Reality</h3>
+
+</div>
+
+
+<!-- Video 6 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oH_LfXnklRw?si=XtRHj6UgSYToN2IV" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Agumented Reality</h3>
+
+</div>
+
+
+<!-- Video 7 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I2pwcAVonKI?si=q8I25komyUP7bFNP" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>Social Media Marketing</h3>
+
+</div>
+
+
+<!-- Video 8 -->
+
+<div class="video-box">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nMfw97J1Zyk?si=Alh0c8Eq-uAUvHQH" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<h3>SEO</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h3>Infyreach Digital Marketing Company</h3>
+
+<p>© Infyreach Solutions Pvt. Ltd. All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
